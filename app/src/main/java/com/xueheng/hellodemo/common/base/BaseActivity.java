@@ -1,10 +1,8 @@
 package com.xueheng.hellodemo.common.base;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
@@ -14,11 +12,10 @@ import android.view.inputmethod.InputMethodManager;
 
 public abstract class BaseActivity extends AppCompatActivity implements View.OnClickListener{
 
-
-
     public abstract void initData();
 
     public abstract void initView();
+
 
     protected <T extends View> T findView(int id) {
         return (T) findViewById(id);
